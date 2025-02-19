@@ -13,51 +13,81 @@
     <form id="survey-form" action="">
       <fieldset class="box">
         <label id="name-label" for="name">Name: 
-          <input class="field" id="name" type="text" placeholder="your name" required/>
+          <input class="field" id="name" type="text" placeholder="enter your name" required/>
         </label>
-        <label id="email-label" for="email">email: 
-          <input class="field" id="email" type="email" placeholder="example@mail.com" required/>
-        </label>
-
-        <label id="number-label" for="number">age (not required): 
-          <input class="field" id="number" type="number" min="13" max="120" placeholder="13"/>
+        <label id="email-label" for="email">Email: 
+          <input class="field" id="email" type="email" placeholder="enter your Email" required/>
         </label>
 
-        <label for="dropdown">select:
-        <select class="field" id="dropdown">
-          <option disabled selected value>select option</option>
-          <option value="1">select 2</option>
-          <option value="2">select 2</option>
-          <option value="3">select 2</option>
+        <fieldset class="selects">
+          <label>How did you hear about us?</label>
+          <label for="radio1">
+            <input id="radio1" type="radio" name="radio-button" value="radio1" checked/>
+            Social Media
+          </label>
+          <label  for="radio2">
+            <input id="radio2" type="radio" name="radio-button" value="radio2"/>
+            Friend/Referral
+          </label>
+          <label  for="radio3">
+            <input id="radio3" type="radio" name="radio-button" value="radio3"/>
+            Company Website
+          </label>
+          <label  for="radio4">
+            <input id="radio4" type="radio" name="radio-button" value="radio4"/>
+            Advertisement
+          </label>
+        </fieldset>
+
+        <label class="select-label" for="dropdown">How would you rate our service?
+        <select id="dropdown">
+          <option disabled selected value>Rate</option>
+          <option value="1">Excellent</option>
+          <option value="2">Good</option>
+          <option value="3">Neutral</option>
+          <option value="4">Poor</option>
+          <option value="5">Very Poor</option>
         </select>
         </label>
         
-        <fieldset>
-          <label>radio:</label>
-          <label for="radio1">
-            <input id="radio1" type="radio" name="radio-button" value="radio1" checked/>
-            radio1
+        <fieldset class="selects">
+          <label>Would you recommend us to a friend?</label>
+          <label for="recommend1">
+            <input id="recommend1" type="radio" name="recommend-radio-button" value="recommend1" checked/>
+            Definitely
+          </label>
+          <label  for="recommend2">
+            <input id="recommend2" type="radio" name="recommend-radio-button" value="recommend2"/>
+            Maybe
+          </label>
+          <label  for="recommend3">
+            <input id="recommend3" type="radio" name="recommend-radio-button" value="recommend3"/>
+            Not Sure
+          </label>
+        </fieldset>
+
+        <fieldset class="selects">
+          <label>What features are most important to you? (Select all that apply):</label>
+          <label for="features1">
+            <input id="features1" type="checkbox" value="features1"/>
+            Easy navigation
+          </label>
+          <label for="features2">
+            <input id="features2" type="checkbox" value="features2"/>
+            Friendly support
+          </label>
+          <label for="features3">
+            <input id="features3" type="checkbox" value="features3"/>
+            Fast response times
+          </label>
+          <label for="features4">
+            <input id="features4" type="checkbox" value="features4"/>
+            Customization options
           </label>
 
-          <label  for="radio2">
-            <input id="radio2" type="radio" name="radio-button" value="radio1"/>
-            radio2
-          </label>
         </fieldset>
-        <fieldset>
-          <label>checkbox:</label>
-          <label for="checkbox1">
-            <input id="checkbox1" type="checkbox" value="check1"/>
-            checkbox1
-          </label>
-          <label for="checkbox2">
-            <input id="checkbox2" type="checkbox" value="check2"/>
-            checkbox2
-          </label>
-          
-        </fieldset>
-        <label for="textarea-label" for="text-area">comments:
-          <textarea id="text-area" rows="3" cols="40" placeholder="add your comment..."></textarea>
+        <label class="textarea-label" for="text-area">What improvements would you like to see?
+          <textarea id="text-area" rows="5" cols="40" placeholder="share your feedbacks..."></textarea>
         </label>
         
         <input id="submit"type="submit" value="submit"/>

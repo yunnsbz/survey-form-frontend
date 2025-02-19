@@ -12,20 +12,22 @@
     </p>
     <form id="survey-form" action="">
       <fieldset>
-        <label id="name-label" for="name">
-          enter your name: <input id="name" type="text" placeholder="your name" required/>
+        <label id="name-label" for="name">Name: 
+          <input class="field" id="name" type="text" placeholder="your name" required/>
         </label>
-        <label id="email-label" for="email">
-          enter email: <input id="email" type="email" placeholder="example@mail.com" required/>
+        <label id="email-label" for="email">email: 
+          <input class="field" id="email" type="email" placeholder="example@mail.com" required/>
         </label>
 
-        <label id="number-label" for="number">
-          enter age: <input id="number" type="number" min="13" max="120" placeholder="13"/>
+        <label id="number-label" for="number">age (not required): 
+          <input class="field" id="number" type="number" min="13" max="120" placeholder="13"/>
         </label>
 
         <label for="dropdown-label" for="dropdown">select:
-        <select id="dropdown">
+        <select class="field" id="dropdown">
           <option>select 1</option>
+          <option>select 2</option>
+          <option>select 2</option>
           <option>select 2</option>
         </select>
         </label>

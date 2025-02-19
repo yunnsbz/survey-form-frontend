@@ -6,9 +6,25 @@ label{
     display: block;
 }
 
+input{
+    display:block;
+    margin: 0;
+    width: 100%;
+}
+
+input[type="submit"]{
+    width: unset;
+}
+
+textarea{
+    margin: 0;
+}
+
 fieldset{
     margin: auto;
-    max-width: 60%;
+    max-width: 40%;
+    min-width: 400px;
+    border: none;
     background-color: rgba(16, 16, 65, 0.8);
     color: white;
     padding: 4%;

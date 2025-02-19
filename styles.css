@@ -1,0 +1,12 @@
+h1, p{
+    text-align: center;
+}
+
+label{
+    display: block;
+}
+
+fieldset{
+    margin: auto;
+    max-width: 60%;
+}

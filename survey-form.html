@@ -10,7 +10,8 @@
     <p id="description">
       Thank you for taking the time to help us improve the platform
     </p>
-    <form id="survey-form">
+    <form id="survey-form" action="">
+      <fieldset>
         <label id="name-label" for="name">
           enter your name: <input id="name" type="text" placeholder="your name" required/>
         </label>
@@ -29,28 +30,31 @@
         </select>
         </label>
 
-        <label for="radio-label" for="radio">abc
-        <input id="radio" type="radio" name="radio-button" value="radio1" checked/>
+        <label for="radio-label" for="radio">
+          <input id="radio" type="radio" name="radio-button" value="radio1" checked/>
+          radio1
         </label>
 
-        <label for="radio-label" for="radio">def
-        <input id="radio" type="radio" name="radio-button" value="radio1"/>
+        <label for="radio-label" for="radio">
+          <input id="radio" type="radio" name="radio-button" value="radio1"/>
+          radio2
         </label>
 
         <label for="checkbox-label" for="checkbox">
-        <input id="checkbox" type="checkbox" value="check1"/>
-        checkbox1
+          <input id="checkbox" type="checkbox" value="check1"/>
+          checkbox1
         </label>
         <label for="checkbox-label" for="checkbox">
-        <input id="checkbox" type="checkbox" value="check2"/>
-        checkbox2
+          <input id="checkbox" type="checkbox" value="check2"/>
+          checkbox2
         </label>
         
         <label for="textarea-label" for="text-area">comments:
-        <textarea id="text-area"></textarea>
+          <textarea id="text-area"></textarea>
         </label>
 
         <input id="submit"type="submit" value="submit"/>
+      </fieldset>
     </form>
   </body>
 </html>

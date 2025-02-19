@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <Title>Survey Form</Title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset ="utf-8">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+    <form id="survey-form">
+        <label id="name-label" for="name">
+          enter your name: <input id="name" type="text" placeholder="your name" required/>
+        </label>
+        <label id="email-label" for="email">
+          enter email: <input id="email" type="email" placeholder="example@mail.com" required/>
+        </label>
+
+        <label id="number-label" for="number">
+          enter age: <input id="number" type="number" min="13" max="120" placeholder="13"/>
+        </label>
+
+        <label for="dropdown-label" for="dropdown">select:
+        <select id="dropdown">
+          <option>select 1</option>
+          <option>select 2</option>
+        </select>
+        </label>
+
+        <label for="radio-label" for="radio">abc
+        <input id="radio" type="radio" name="radio-button" value="radio1" checked/>
+        </label>
+
+        <label for="radio-label" for="radio">def
+        <input id="radio" type="radio" name="radio-button" value="radio1"/>
+        </label>
+
+        <label for="checkbox-label" for="checkbox">
+        <input id="checkbox" type="checkbox" value="check1"/>
+        checkbox1
+        </label>
+        <label for="checkbox-label" for="checkbox">
+        <input id="checkbox" type="checkbox" value="check2"/>
+        checkbox2
+        </label>
+        
+        <label for="textarea-label" for="text-area">comments:
+        <textarea id="text-area"></textarea>
+        </label>
+
+        <input id="submit"type="submit" value="submit"/>
+    </form>
+  </body>
+</html>
+

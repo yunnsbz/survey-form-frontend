@@ -11,7 +11,7 @@
       Thank you for taking the time to help us improve the platform
     </p>
     <form id="survey-form" action="">
-      <fieldset>
+      <fieldset class="box">
         <label id="name-label" for="name">Name: 
           <input class="field" id="name" type="text" placeholder="your name" required/>
         </label>
@@ -31,26 +31,31 @@
           <option value="3">select 2</option>
         </select>
         </label>
-
-        <label for="radio1">
-          <input id="radio1" type="radio" name="radio-button" value="radio1" checked/>
-          radio1
-        </label>
-
-        <label  for="radio2">
-          <input id="radio2" type="radio" name="radio-button" value="radio1"/>
-          radio2
-        </label>
-
-        <label for="checkbox1">
-          <input id="checkbox1" type="checkbox" value="check1"/>
-          checkbox1
-        </label>
-        <label for="checkbox2">
-          <input id="checkbox2" type="checkbox" value="check2"/>
-          checkbox2
-        </label>
         
+        <fieldset>
+          <label>radio:</label>
+          <label for="radio1">
+            <input id="radio1" type="radio" name="radio-button" value="radio1" checked/>
+            radio1
+          </label>
+
+          <label  for="radio2">
+            <input id="radio2" type="radio" name="radio-button" value="radio1"/>
+            radio2
+          </label>
+        </fieldset>
+        <fieldset>
+          <label>checkbox:</label>
+          <label for="checkbox1">
+            <input id="checkbox1" type="checkbox" value="check1"/>
+            checkbox1
+          </label>
+          <label for="checkbox2">
+            <input id="checkbox2" type="checkbox" value="check2"/>
+            checkbox2
+          </label>
+          
+        </fieldset>
         <label for="textarea-label" for="text-area">comments:
           <textarea id="text-area" rows="3" cols="40" placeholder="add your comment..."></textarea>
         </label>
